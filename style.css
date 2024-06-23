@@ -1,94 +1,322 @@
 html{
-    box-sizing: border-box;
-
+  box-sizing: border-box;
 }
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    max-width: 100vw;
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
 }
-
-header{
-    width:100% ;
-    height: 600px;
-    border-radius: 0px 0px 0px 200px;
-    background-color: red;
-    overflow: hidden;
-    opacity: .7;
-    position: relative;
+body {
+  background-color: #fafafa;
+  width: 100%;
 }
 
-.cover{
-    position: absolute;
-    width: 155%;
-    margin-top: -60%;
-    margin-left: -12%;
-    opacity: .3;
-    
+header {
+  width: 100%;
+  height: 600px;
+  border-radius: 0px 0px 0px 200px;
+  background-color: red;
+  overflow: hidden;
+  opacity: 0.7;
+  position: relative;
 }
-.nav-menu{
-    display: flex;
-    margin: 30px 0px 0px 100px;
-    padding: 30px 0px 0px 80px;
-    
+
+.cover {
+  position: absolute;
+  width: 150%;
+  margin-top: -60%;
+  margin-left: -12%;
+  opacity: 0.3;
 }
+
+.nav-menu {
+  display: flex;
+  float: left;
+  text-align: center;
+  width: 80%;
+  padding: 20px;
+  margin-left: 10%;
+  margin-top: 2%;
+  position: absolute;
+}
+
+.logo {
+  width: 150px;
+}
+
 .nav-menu ul {
-    display: flex;
-    margin-left: 4%;
-
+  display: flex;
+  list-style: none;
+  text-align: center;
+  margin-left: 50px;
+  margin-top: 20px;
 }
+
 .nav-menu ul li {
-    display: flex;
-    margin: 10px 0px 0px 50px;
-
+  margin-left: 30px;
 }
+
 .nav-menu ul li a {
-   color: white;
-   text-decoration: none;
+  color: whitesmoke;
+  text-decoration: none;
+  padding: 12px;
+  opacity: 0.7;
+}
+
+.sub-menu {
+  display: none;
+}
+
+.sub-menu ul {
+  position: absolute;
+  text-decoration: none;
+  display: block;
+  background-color: #fff;
+  width: auto;
+  margin-left: -20px;
+  border-radius: 10px;
+}
+
+.sub-menu ul li {
+  padding: 10px;
+  margin: 10px;
+  border-bottom: 1px dotted #ddd;
+  text-align: start;
+}
+
+.sub-menu ul li a {
+  color: black;
+}
+
+.nav-menu ul li:hover .sub-menu {
+  display: block;
+  position: absolute;
+}
+
+.sub-menu ul li:hover {
+  background-color: #ddd;
+  border-radius: 5px;
+  text-align: center;
+  width: 80%;
+}
+
+.btn {
+  position: absolute;
+  left: 85%;
+  top: 45px;
+}
+
+.btn a {
+  text-decoration: none;
+  padding: 15px 20px 15px 20px;
+  border-radius: 20px;
+}
+
+.Singin {
+  color: #fff;
+  font-family: ;
+  font-size: large;
+}
+
+.SingUp {
+  background: #fff;
+  color: red;
+}
+
+.SingUp:hover {
+  background: red;
+  color: #fff;
+}
+
+.sub-header {
+  color: #fff;
+  text-align: center;
+  margin-top: 15%;
+}
+
+.sub-header h1 {
+  font-size: 3.5rem;
+}
+
+.sub-header p {
+  font-size: 1.2rem;
+  line-height: 50px;
+}
+
+.btn2 {
+  margin: 40px;
+}
+
+.btn2 > a {
+  color: #ddd;
+  text-align: center;
+  margin: 20px;
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+
+.hi:hover {
+  color: blue;
+}
+
+.btn2 > a:first-child {
+  text-align: center;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 100px;
+  color: red;
+  font-size: 900;
+}
+
+.btn2 > a:last-child {
+  text-align: center;
+  background-color: red;
+  padding: 15px 25px 15px 25px;
+  border-radius: 100px;
+  color: wheat;
+  font-size: 700;
+  border: 1px solid #ddd;
+}
+
+.btn2 > a:first-child:hover {
+  background-color: red;
+  color: #fff;
+  cursor: pointer !important;
+}
+
+.btn2 > a:last-child:hover {
+  background-color: #fff;
+  color: red !important;
+  cursor: pointer !important;
+}
+/* start second section */
+.design {
+  width: 100%;
+}
+.design > h1 {
+  text-align: center;
+  margin-top: 8%;
+  font-size: 2rem;
+}
+.main-desing-content {
+  display: flex;
+}
+.design-content {
+  width: 28%;
+  margin: 60px 0px 0px 200px;
+  font-size: bold;
+}
+.design-content > h2:first-child {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+.design-content > h2 {
+  font-size: 1.5rem;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.design-content > p {
+  line-height: 25px;
+  font-size: 1rem;
+  opacity: 0.7;
+}
+.design-illuestation {
+  position: absolute;
+  margin-left: 15%;
+  margin-top: -8%;
+}
+#phone {
+  position: relative;
+  width: 100%;
+  height: 430px;
+  background-color: #3c3f60;
+  margin-top: 20%;
+  border-radius: 0px 100px 0px 100px;
+  background-image: url("images/bg-pattern-circles.svg");
+  background-repeat: no-repeat;
+  background-position: 0px -500px;
+}
+
+#curcle {
+  margin-top: 100px;
+}
+#phone-imge {
+  position: absolute;
+  z-index: 1;
+  margin: -60px 0px 0px 150px;
+}
+.phones-content {
+  position: absolute;
+  width: 30%;
+  color: #fff;
+  right: 250px;
+  top: 130px;
+}
+.phones-content > h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+.phones-content > p {
+  line-height: 25px;
+  font-family: cursive;
+}
+
+.laptop-desktop {
+  width: 100%;
+}
+.illustration-laptop-desktop {
+  width: 50%;
+  margin-top: 150px;
+  margin-bottom: 50px;
+}
+.laptop-contant {
+  width: 28%;
+  margin: 200px 0px 0px 200px;
+  font-size: bold;
+}
+
+/* start footer section */
+footer {
+  width: 100%;
+  height: 400px;
+  background-color: #24242c;
+  border-radius: 0px 100px 0px 0px;
+  position: relative;
+}
+
+.footer{
+  display: flex;
+  position: absolute;
+  top: 100px;
+  left: 15%;
 
 }
-.registation{
+.footer img{
+  width: 110px;
+  height: 60px;
+}
+
+.footer ul{
+  list-style: none;
+
+}
+/* .footer ul li {
+
+} */
+.footer ul li a{
+  color: whitesmoke;
+text-decoration: none;
+margin-left: 260px;
+opacity: .8;
+font-weight: 900;
+}
+.sub-footer {
 position: absolute;
-right: 11%;
-padding: 20px;
-background: none;
+top: 50px;
 }
-
-.registation a{
-    text-decoration: none;
-    margin: 0px 30px 0px 0px;
-    transition:  1s ;
-
+.sub-footer ul li a{
+  line-height: 35px;
+  opacity: .6;
+  font-weight: 400;
 }
-.Login{
-    color: white;
-    font-size: 1.2rem;
-    padding: 10px 15px  10px 15px;
-    border-radius: 10px;
-}
-.Login:hover{
-    background-color: #f1f1f1;
-    padding: 10px 15px  10px 15px;
-    border-radius: 10px;
-    font-size: 1.2rem;
-    opacity: .9;
-    color: black;
-}
-.SingUp{
-    background-color: #ddd;
-    padding: 10px 15px  10px 15px;
-    border-radius: 10px;
-    font-size: 1.2rem;
-
-}
-.SingUp:hover{
-    background-color: red;
-    opacity: .9;
-    color: #ddd;
-}
-
-  
-  
-
-
